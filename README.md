@@ -1,1 +1,1 @@
-HTML pages for gl18
+HTML pages for gl18 High School
