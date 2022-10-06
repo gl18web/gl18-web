@@ -1,0 +1,58 @@
+@charset "utf-8";
+#xiaohui {
+    margin: 19px 0px 30px 40px;
+}
+
+/*#shouyeyou {
+    position: fixed;
+    right: 40px;
+    box-sizing: border-box;
+	overflow: hidden;
+	background: no-repeat center top / 100% 100%;
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("shouyeyou.jpg");
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("shouyeyou.jpg");
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("shouyeyou.jpg");
+}废弃稿*/
+.shouyeyou {
+    position: fixed;
+    width: 386px;
+    height: 113px;
+    right: 40px;
+    background: -webkit-linear-gradient(to left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("shouyeyou.jpg") no-repeat;
+    background: -o-linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("shouyeyou.jpg") no-repeat;
+    background: linear-gradient(to left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("shouyeyou.jpg") no-repeat;
+    margin-top: 1px;
+    /* [disabled]color: #DEADFF; */
+    margin-right: -50px;
+}
+.login {
+    top: 0px;
+    position: fixed;
+    right: 56px;
+    color: #FFFFFF;
+    margin-top: 9px;
+    font-variant: normal;
+    font-style: italic;
+    font-size: xx-small;
+}
+.login:hover {
+    text-decoration: underline;
+}
+
+.super_login {
+    position: fixed;
+    top: 0px;
+    right: 112px;
+    color: #FFFFFF;
+    margin-top: 9px;
+    font-style: italic;
+    font-size: xx-small;
+}
+.super_login:hover {
+    text-decoration: underline;
+}
+
+.shouye_header {
+    background-color: #168AC2;
+    padding-bottom: 20px;
+}
