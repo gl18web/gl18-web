@@ -22,9 +22,9 @@
     width: 386px;
     height: 113px;
     right: 40px;
-    background: -webkit-linear-gradient(to left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("shouyeyou.jpg") no-repeat;
-    background: -o-linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("shouyeyou.jpg") no-repeat;
-    background: linear-gradient(to left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("shouyeyou.jpg") no-repeat;
+    background: -webkit-linear-gradient(to left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("img/shouyeyou.jpg") no-repeat;
+    background: -o-linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("img/shouyeyou.jpg") no-repeat;
+    background: linear-gradient(to left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("img/shouyeyou.jpg") no-repeat;
     margin-top: 1px;
     /* [disabled]color: #DEADFF; */
     margin-right: -50px;
