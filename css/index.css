@@ -60,3 +60,11 @@
     background-color: #168AC2;
     padding-bottom: 20px;
 }
+.footer {
+    position: static;
+    bottom: 1px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: x-small;
+    text-align: center;
+}
