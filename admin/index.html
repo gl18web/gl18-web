@@ -2,6 +2,7 @@
 <html>
 <head>
 <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="../js/jquery-3.6.1.min.js"></script>
 <title>Purple_loginform Website Template | Home :: w3layouts</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -39,13 +40,13 @@
 			<div class="clear"> </div>
 			<div class="submit">
 				<script>
-					function login(){
-						var pasHash = md5($("#passwd").val);
+					function login(value){
+						var pasHash = md5(value);
 						window.alert(pasHash);
 						pasHash = null;
 					}
 				</script>
-				<input type="submit" onclick="login()" value="Sign in" >
+				<input type="submit" onclick="login(passwd.value)" value="Sign in" >
 				<h4><a href="#">Lost your Password ?</a></h4>
 						  <div class="clear">  </div>	
 			</div>
