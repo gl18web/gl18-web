@@ -2,6 +2,7 @@
 <html>
 <head>
 <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="https://www.recaptcha.net/recaptcha/api.js" async="" defer=""></script>
 <script src="../js/jquery-3.6.1.min.js"></script>
 <title>Purple_loginform Website Template | Home :: w3layouts</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -19,6 +20,42 @@
 		});
 	});	  
 });
+</script>
+
+<script>
+	function login(value){
+		
+		if(this.key === undefined){
+			window.alert("Please do ReCAPTCHA first!")
+		}
+		console.log(this.key)
+		var pasHash = md5(value);
+		//window.alert(pasHash);
+		pasHash = null;
+
+		const http = new XMLHttpRequest();
+        const url = "http://localhost:8080/api/recaptcha/check?token=" + this.key;
+        http.open("GET",url)
+        http.send()
+        http.onreadystatechange=function () {
+            if(this.readyState === 4 && this.status === 200){
+                obj = JSON.parse(http.responseText)
+                if (obj.success === true){
+                    window.alert("passed!")
+                }else {
+                    window.alert("Failed!")
+                }
+
+            }
+        }
+		window.alert("test")
+		
+	}
+
+	function robotVerified(key){
+	this.key = key
+	}
+
 </script>
 </head>
 <body>
@@ -38,17 +75,12 @@
 				<input type="password" id="passwd" name="passwd" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
 			</li>
 			<div class="clear"> </div>
+			<div class="g-recaptcha" data-callback="robotVerified" data-sitekey="6Le4NIwiAAAAAKNu47aJH4j9ojMo2HCBT6RFL0JT"></div>
 			<div class="submit">
-				<script>
-					function login(value){
-						var pasHash = md5(value);
-						window.alert(pasHash);
-						pasHash = null;
-					}
-				</script>
 				<input type="submit" onclick="login(passwd.value)" value="Sign in" >
 				<h4><a href="#">Lost your Password ?</a></h4>
-						  <div class="clear">  </div>	
+				<div class="clear">  </div>	
+			
 			</div>
 				
 		</form>
@@ -56,6 +88,5 @@
 	</div>
 	</div>
 	<div class="clear"> </div>
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
