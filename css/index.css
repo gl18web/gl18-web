@@ -46,7 +46,7 @@
 .super_login {
     position: fixed;
     top: 0px;
-    right: 122px;
+    right: 112px;
     color: #FFFFFF;
     margin-top: 9px;
     font-style: italic;
@@ -175,4 +175,3 @@
     background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     background-image: -o-linear-gradient(-90deg,rgba(255,255,255,0.5),rgba(255,255,25,0));
 }
->>>>>>> fe6363d17e29c424e70eea71dd78698c5c927f50
